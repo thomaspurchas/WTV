@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block title %}edit content{% endblock %}
+
+{% block breadcrumbs %}
+<li><a href='/'>home</a></li>
+<li><span id='current-breadcrumb'>edit content</span></li>
+{% endblock %}
+
 {% block extrahead %}
 
 <script type="text/javascript" src="/media/js/wymeditor/jquery.wymeditor.js"></script>
