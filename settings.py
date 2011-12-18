@@ -6,6 +6,7 @@ gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = Private.WTVSettings.debug()
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
