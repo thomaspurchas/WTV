@@ -101,7 +101,7 @@
 
 
      </ul>
-     <div id='banner'><a href='http://tv.warwick.ac.uk/' id='logo'><h1>WTV - Warwick TV</h1></a>
+     <div id='banner'><a href='/' id='logo'><h1>WTV - Warwick TV</h1></a>
     <div id='icon-box'>
       <a id='twitter-icon' href="http://twitter.com/Warwick_TV"></a>
       <a id='fb-icon' href="https://www.facebook.com/pages/WTV/176589262511"></a>
@@ -111,7 +111,9 @@
 
     <div style='clear:both;'></div>
     <div id='menubar'>
-        <ul id='breadcrumbs'>{% block breadcrumbs %}{% show_breadcrumb %}{% endblock %}{% block extra-breadcrumbs %}{% endblock %}</ul><ul id='submenu'>{% show_sub_menu 1 %}</ul>
+      <div class='separator'></div>
+      <ul id='breadcrumbs'><li>&raquo;</li>{% block breadcrumbs %}{% show_breadcrumb %}{% endblock %}{% block extra-breadcrumbs %}{% endblock %}</ul><ul id='submenu'>{% show_sub_menu 1 %}</ul>
+      <div class='separator'></div>
     </div>
     </div>
     <div style='clear:both;height:25px;'></div>

@@ -6,7 +6,9 @@
 {% block main-col %}
   <div id='grid-left'>
 
-<div id='grid-right'> {% placeholder sidebar %} 
+    <div id='grid-right'>
+<h1 style='margin-left:-5px; font-size:1.7em'>{% page_attribute "page_title" %}</h1>
+      {% placeholder sidebar %} 
 
 {% include "searchbox.html" %}
 
