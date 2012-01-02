@@ -14,16 +14,17 @@
 {% endblock %}
 
 {% block main-col %}
-<h1><a href='http://tv.warwick.ac.uk' style='color: rgb(127, 158, 248); text-decoration: none !important'>WTV - </a>{{ object.title }}</h1>
 <div id="single-video">
   
   {% with object.html_content|safe as object_content %}
   {% include "zinnia/_entry_detail.html" %}
   {% endwith %}
 
+<h1 style='font-weight: normal; text-align: center; clear: both; margin: 0 0 15px 0'>
+  <a href='http://tv.warwick.ac.uk' style='color: rgb(127, 158, 248); text-decoration: none !important; font-weight: bold;'>WTV - </a>{{ object.title }}
+</h1>
 </div>
 
-<div style='clear:both;'></div>
 
 {% endblock %}
 
