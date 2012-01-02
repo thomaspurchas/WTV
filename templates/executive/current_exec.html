@@ -14,7 +14,7 @@
       </td>
   <td class='exec-text'>
     <p><strong>{{ member.role }}: {{ member.name }}</strong></p>
-    <p>{{ member.description }}</p>
+    <p>{{ member.description|linebreaks }}</p>
   </td>
   {% cycle '' '</tr>' %}
     
