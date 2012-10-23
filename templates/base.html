@@ -9,8 +9,12 @@
     <meta name="ROBOTS" content="ALL" />
     <meta name="keywords" content="warwick, tv, television, student, university, wtv" />
     <meta name="description" content="WTV is the University of Warwick TV Society. {% block meta-description %}{% endblock %}" />
-    <link rel='icon' href='/media/tvlogo-small.png' /> 
+    <link rel='icon' href='/media/tvlogo-small.png' />
     <link href="{{ MEDIA_URL }}css/{% block cssid %}base{% endblock %}.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- Freshers TV Message CSS -->
+    <link rel="stylesheet" href="http://www.susu.tv/wp-content/themes/susutv/ftv2012style.css" type="text/css" />
+    <!-- End of message -->
 
     {% render_block "js" %}
 
@@ -30,6 +34,16 @@
     {% render_block "css" %}
   </head>
   <body>
+      <!-- FreshersTV Message -->
+      <a href="http://www.freshers.tv/" target="_blank" title="Watch FreshersTV now...">
+      <div id="ftv2012">
+      <div id="ftv2012wrapper">
+      <img src="http://www.susu.tv/wp-content/uploads/2012/10/FTV2012.png" alt="FreshersTV 2012 - Live From YSTV" border="0" />
+      <div id="ftv2012message">
+      Watch out for us as we take part in FreshersTV, the biggest live broadcast in the student TV calendar. The 3 hour megashow kicks off today at 4pm, catch all the action on www.freshers.tv <img src="http://www.susu.tv/wp-content/uploads/2012/10/arrow.png" border="0" style="display:inline;vertical-align:text-top;" />
+      </div>
+      </div></div></a>
+      <!-- End of message -->
     {% block extrahead %}{% endblock %}
   {% cms_toolbar %}
     <script type="text/javascript">
@@ -112,7 +126,7 @@
       <a id='youtube-icon' href="http://www.youtube.com/user/WarwickTV"></a>
       <a id='su-icon' href="http://www.warwicksu.com/societies/warwicktv/"></a>
     </div>
-      
+
       <div class='separator'></div>
       <ul id='breadcrumbs'><li>&raquo;</li>{% block breadcrumbs %}{% show_breadcrumb %}{% endblock %}{% block extra-breadcrumbs %}{% endblock %}</ul><ul id='submenu'>{% show_sub_menu 1 %}</ul>
       <div class='separator'></div>
