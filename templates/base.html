@@ -12,10 +12,6 @@
     <link rel='icon' href='/media/tvlogo-small.png' />
     <link href="{{ MEDIA_URL }}css/{% block cssid %}base{% endblock %}.css" rel="stylesheet" type="text/css" media="screen" />
 
-    <!-- Freshers TV Message CSS -->
-    <link rel="stylesheet" href="http://www.susu.tv/wp-content/themes/susutv/ftv2012style.css" type="text/css" />
-    <!-- End of message -->
-
     {% render_block "js" %}
 
     <script type='text/javascript' src='/media/js/jquery.js'></script>
@@ -34,16 +30,6 @@
     {% render_block "css" %}
   </head>
   <body>
-      <!-- FreshersTV Message -->
-      <a href="http://www.freshers.tv/" target="_blank" title="Watch FreshersTV now...">
-      <div id="ftv2012">
-      <div id="ftv2012wrapper">
-      <img src="http://www.susu.tv/wp-content/uploads/2012/10/FTV2012.png" alt="FreshersTV 2012 - Live From YSTV" border="0" />
-      <div id="ftv2012message">
-      Watch out for us as we take part in FreshersTV, the biggest live broadcast in the student TV calendar. The 3 hour megashow kicks off today at 4pm, catch all the action on www.freshers.tv <img src="http://www.susu.tv/wp-content/uploads/2012/10/arrow.png" border="0" style="display:inline;vertical-align:text-top;" />
-      </div>
-      </div></div></a>
-      <!-- End of message -->
     {% block extrahead %}{% endblock %}
   {% cms_toolbar %}
     <script type="text/javascript">
